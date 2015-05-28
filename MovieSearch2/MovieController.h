@@ -11,6 +11,7 @@
 @interface MovieController : NSObject
 
 + (MovieController *)sharedInstance;
+- (void)parseEntriesFromDictionary:(NSDictionary *)resultsDictionary;
 
 @property (nonatomic, strong) NSArray *resultMovies;
 

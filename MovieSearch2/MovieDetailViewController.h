@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Movie.h"
 
 @interface MovieDetailViewController : UIViewController
+@property (nonatomic) Movie *currentMovie;
+@property (nonatomic,strong) NSData *imageData;
+- (void)updateLabels;
 
 @end

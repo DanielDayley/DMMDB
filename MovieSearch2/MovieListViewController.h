@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Movie.h"
 
-@interface MovieListViewController : UIViewController
-
+@interface MovieListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
+@property (nonatomic) Movie *selectedMovie;
 
 @end
 
